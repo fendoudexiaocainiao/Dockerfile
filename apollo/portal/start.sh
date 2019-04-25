@@ -1,7 +1,7 @@
 #!/bin/bash
 
 base_java_opts="-Denv=dev"
-portal_java_opts="$base_java_opts -Ddev_meta=$CONFIG_SERVER_URL -Dspring.profiles.active=github,auth"
+portal_java_opts="$base_java_opts -Ddev_meta=$CONFIG_SERVER_URL -Dspring.profiles.active=github,auth -Deureka.service.url=$EUREKA_SERVICE_URL"
 
 portal_jar=./apollo-all-in-one.jar
 portal_log=./logs/apollo-portal.log

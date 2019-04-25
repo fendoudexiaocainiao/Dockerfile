@@ -17,6 +17,7 @@ ENV APOLLO_PORTAL_DB_URL=jdbc:mysql://mysql:3306/ApolloPortalDB?characterEncodin
 ENV APOLLO_PORTAL_DB_USERNAME=root
 ENV APOLLO_PORTAL_DB_PASSWORD=123456
 ENV CONFIG_SERVER_URL=http://apollo-service:8080
+ENV EUREKA_SERVICE_URL=http://apollo-service:8080/eureka
 
 EXPOSE 8070
 
