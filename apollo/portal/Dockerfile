@@ -5,7 +5,7 @@ RUN apk add --no-cache bash && \
     ln -sf /usr/share/zoneinfo/Asia/Shanghai /etc/localtime &&  \
     echo "Asia/Shanghai" > /etc/timezone && \
     mkdir /apollo-portal /apollo-portal/logs && \
-    touch /apollo-portal/logs/apollo-portal.log && \
+    touch /apollo-portal/logs/apollo-portal.log
 
 COPY start.sh /apollo-portal
 COPY apollo-all-in-one.jar /apollo-portal
