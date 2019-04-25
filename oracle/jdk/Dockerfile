@@ -13,7 +13,7 @@ RUN echo https://mirrors.aliyun.com/alpine/latest-stable/main > /etc/apk/reposit
     apk add p7zip && \
     7z x "jdk1.8.0_192.7z.*" -o/usr/local && \
     rm -rf ./gilibc-2.29-r0.apk ./jdk1.8.0_192.7z* && \
-    chmod -R /usr/local/jdk1.8.0_192
+    chmod -R 777 /usr/local/jdk1.8.0_192
 
 ENV JAVA_HOME=/usr/local/jdk1.8.0_192
 ENV CLASSPATH=.:${JAVA_HOME}/lib/tools.jar:${JAVA_HOME}/lib/dt.jar
