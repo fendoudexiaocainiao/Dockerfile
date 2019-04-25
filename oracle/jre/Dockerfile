@@ -11,7 +11,7 @@ RUN echo https://mirrors.aliyun.com/alpine/latest-stable/main > /etc/apk/reposit
     rm -rf ./gilibc-2.29-r0.apk
 
 ENV JAVA_HOME=/usr/local/jre1.8.0_192
-ENV CLASSPATH=.:${JAVA_HOME}/lib/tools.jar:${JAVA_HOME}/lib/dt.jar
+ENV CLASSPATH=.
 ENV PATH=.:${JAVA_HOME}/bin:${PATH}
 
 CMD ["java","-version"]
