@@ -1,4 +1,4 @@
-FROM registry.cn-hangzhou.aliyuncs.com/wanghao0921/oracle-jdk
+FROM registry.cn-hangzhou.aliyuncs.com/wanghao0921/oracle-jdk:8u192
 MAINTAINER wanghao<wh564546239@gmail.com>
 
 RUN apk add --no-cache bash && \
