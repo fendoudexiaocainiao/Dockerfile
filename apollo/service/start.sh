@@ -1,9 +1,7 @@
 #!/bin/bash
 
-eureka_service_url=http://127.0.0.1:8080/eureka
-
 base_java_opts="-Denv=dev"
-server_java_opts="$base_java_opts -Dspring.profiles.active=github -Deureka.service.url=$eureka_service_url"
+server_java_opts="$base_java_opts -Dspring.profiles.active=github -Deureka.service.url=$EUREKA_SERVICE_URL"
 
 service_jar=./apollo-all-in-one.jar
 service_log=./logs/apollo-service.log

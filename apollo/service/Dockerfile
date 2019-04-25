@@ -16,6 +16,7 @@ RUN chmod -R 777 /apollo-service
 ENV APOLLO_CONFIG_DB_URL=jdbc:mysql://mysql:3306/ApolloConfigDB?characterEncoding=utf8
 ENV APOLLO_CONFIG_DB_USERNAME=root
 ENV APOLLO_CONFIG_DB_PASSWORD=123456
+ENV EUREKA_SERVICE_URL=http://apollo-service:8080/eureka
 
 EXPOSE 8080 8090
 
