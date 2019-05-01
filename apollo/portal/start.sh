@@ -9,7 +9,7 @@ portal_log=./logs/apollo-portal.log
 if [ "$1" = "start" ] ; then
   echo "==== starting portal ===="
   echo "Portal logging file is $portal_log"
-  export JAVA_OPTS="$portal_java_opts -Dlogging.file=$portal_log -Dserver.port=8070 -Dspring.datasource.url=$APOLLO_PORTAL_DB_URL -Dspring.datasource.username=$APOLLO_PORTAL_DB_USERNAME -Dspring.datasource.password=$APOLLO_PORTAL_DB_PASSWORD"
+  export JAVA_OPTS="$portal_java_opts -Dlogging.file=$portal_log -Dserver.port=8070 -Dspring.datasource.url=$APOLLO_PORTAL_DB_URL -Dspring.datasource.username=$APOLLO_PORTAL_DB_USERNAME -Dspring.datasource.password=$APOLLO_PORTAL_DB_PASSWORD -Deureka.client.enabled=false"
   $portal_jar start --portal
 
   rc=$?
